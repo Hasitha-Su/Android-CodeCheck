@@ -4,11 +4,16 @@
 package jp.co.yumemi.android.code_check
 
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
+import dagger.hilt.android.AndroidEntryPoint
 
-class MainActivity : AppCompatActivity(R.layout.activity_top) {
+/**
+ * The main activity of the application.
+ *
+ * This activity serves as the entry point of the application and is responsible for hosting the main user interface.
+ *
+ * @constructor Creates an instance of the MainActivity class.
+ */
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
-    companion object {
-        lateinit var lastSearchDate: Date
-    }
 }
